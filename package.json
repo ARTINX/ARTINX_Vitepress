@@ -1,0 +1,35 @@
+{
+  "author": "ARTINX <sustech.artinx@gmail.com>",
+  "description": "ARTINX's Official Website",
+  "keywords": [
+    "ARTINX",
+    "Artinx",
+    "robotics",
+    "SUSTech",
+    "tutorial",
+    "guide",
+    "blog"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-textual-uml": "^0.16.0",
+    "vitepress": "1.0.0-rc.10",
+    "vitepress-plugin-auto-sidebar": "^1.1.0"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
